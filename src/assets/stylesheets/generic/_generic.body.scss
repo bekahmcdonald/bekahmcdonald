@@ -1,0 +1,11 @@
+// Generic: Body
+
+body {
+  font-family: 'League Spartan', Helvetica Neue, Arial, sans-serif;
+}
+
+ @supports (font-variation-settings: normal) {
+  body {
+   font-family: 'League Spartan VF', Helvetica Neue, Arial, sans-serif;
+  }
+}

@@ -1,0 +1,20 @@
+// Global styles
+
+// Settings
+@import 'settings/settings.breakpoints';
+@import 'settings/settings.spacing';
+@import 'settings/settings.typography';
+
+
+// Tools
+@import 'tools/tools.mq';
+
+
+// Generic
+@import 'generic/generic.reset';
+@import 'generic/generic.body';
+
+
+// Elements
+@import 'elements/elements.main';
+
