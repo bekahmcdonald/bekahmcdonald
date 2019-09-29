@@ -19,8 +19,7 @@ export default {
 <style lang="scss" scoped>
   .masthead {
     flex: 1;
-    margin: $base * 3 0;
-    margin: 0 auto;
+    margin: $base * 3 auto;
     max-width: 90%;
 
     @include mq($from: md) {
