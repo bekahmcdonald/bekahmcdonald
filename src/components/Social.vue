@@ -1,6 +1,6 @@
 <template lang="pug">
   .social
-    a(href="https://medium.com/@bekah.mcdonald" rel="noopener")
+    a(href="https://medium.com/bekah-mcdonald" rel="noopener")
       bm-medium.icon
     a(href="https://twitter.com/bekah_mcdonald" rel="noopener")
       bm-twitter.icon
