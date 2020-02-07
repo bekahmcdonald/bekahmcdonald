@@ -24,18 +24,20 @@ export default {
 
 <style lang="scss" scoped>
 .social {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-  }
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
 
-  .icon {
-    margin: 0 10px;
-    transition: transform 0.1s ease-in-out;
-    width: 50px;
+.icon {
+  margin: 0 10px;
+  transition: transform 0.1s ease-in-out;
+  width: 50px;
 
-    @media (hover: hover) {
-      &:hover { transform: scale(1.125)}
+  @media (hover: hover) {
+    &:hover {
+      transform: scale(1.125);
     }
   }
+}
 </style>
