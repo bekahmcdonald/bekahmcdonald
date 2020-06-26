@@ -11,17 +11,23 @@
   
     skills(:content="skills")
 
+    div(class="lg:o-container")
+      .work(id="work" v-if="work")
+        project(v-for="project in work" :key="project.id" :project="project")
+
     contact(:content="contact" :social="social")
     
 </template>
 
 <script>
 import Axios from 'axios'
+import Project from '@/components/Project'
 import Contact from '@/components/Contact'
 import Skills from '@/components/Skills'
 
 export default {
   components: {
+    Project,
     Contact,
     Skills,
   },
@@ -66,5 +72,30 @@ export default {
     margin-bottom: 0;
   }
 }
+
+.work {
+  @include mq($from: lg) {
+    margin-bottom: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -40px;
+
+    .project {
+      width: 50%;
+      padding-left: 40px;
+    }
+  }
+
+  @include mq(lg, xl) {
+    .project:nth-child(3n - 2) {
+      width: 100%;
+    }
+  }
+
+  @include mq($from: xl) {
+    .project {
+      width: 50%;
+    }
+  }
 }
 </style>
