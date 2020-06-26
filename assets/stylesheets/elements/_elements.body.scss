@@ -1,0 +1,16 @@
+// Elements: Body
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  text-rendering: optimizeLegibility;
+  color: $ink;
+  font-size: 18px;
+  line-height: 1.44;
+  font-weight: 300;
+
+  @include mq($from: lg) {
+    font-size: 22px;
+  }
+}

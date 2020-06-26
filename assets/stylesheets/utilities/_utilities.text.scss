@@ -1,0 +1,21 @@
+// Utilties: Text
+
+.heading {
+  @extend %heading;
+}
+
+.subheading {
+  @extend %subheading;
+}
+
+.label {
+  @extend %label;
+}
+
+.note {
+  @extend %note;
+}
+
+.small {
+  @extend %small;
+}

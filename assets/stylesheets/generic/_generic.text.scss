@@ -1,0 +1,54 @@
+// Generic: Text
+
+%heading {
+  font-size: 21px;
+  font-weight: 400;
+  margin-bottom: 12px;
+
+  @include mq($from: lg) {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+}
+
+%subheading {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 12px;
+
+  @include mq($from: lg) {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+}
+
+%label {
+  font-size: 12px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2.34px;
+
+  @include mq($from: lg) {
+    font-size: 16px;
+  }
+}
+
+%note {
+  font-family: 'Electric Dreams Script', 'Lato', sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  user-select: none;
+
+  @include mq($from: lg) {
+    font-size: 21px;
+  }
+}
+
+%small {
+  font-size: 14px;
+  line-height: 1.21;
+
+  @include mq($from: lg) {
+    font-size: 16px;
+  }
+}

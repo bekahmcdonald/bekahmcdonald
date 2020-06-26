@@ -1,3 +1,5 @@
+import path from 'path'
+
 export default {
   /*
    ** Nuxt rendering mode
@@ -24,12 +26,19 @@ export default {
         content: process.env.npm_package_description || '',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        href:
+          'https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap',
+        rel: 'stylesheet',
+      },
+    ],
   },
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['@/assets/stylesheets/style.scss', '@/assets/stylesheets/fonts.scss'],
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
@@ -64,6 +73,12 @@ export default {
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {
+    extend(config, { isDev, isClient, loaders }) {
+      loaders.scss.prependData = `@import "${path.resolve(
+        __dirname,
+        'assets/stylesheets/prepend.scss'
+      )}";`
+    },
     postcss: {
       // Add plugin names as key and arguments as value
       // Install them before as dependencies with npm or yarn
