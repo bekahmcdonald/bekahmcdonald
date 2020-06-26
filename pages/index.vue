@@ -11,14 +11,18 @@
   
     skills(:content="skills")
 
+    contact(:content="contact" :social="social")
+    
 </template>
 
 <script>
 import Axios from 'axios'
+import Contact from '@/components/Contact'
 import Skills from '@/components/Skills'
 
 export default {
   components: {
+    Contact,
     Skills,
   },
   async asyncData({ params }) {
