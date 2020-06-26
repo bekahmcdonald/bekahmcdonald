@@ -9,12 +9,18 @@
         h2.heading {{ block.heading }}
         div(v-html="block.copy")
   
+    skills(:content="skills")
+
 </template>
 
 <script>
 import Axios from 'axios'
+import Skills from '@/components/Skills'
 
 export default {
+  components: {
+    Skills,
+  },
   async asyncData({ params }) {
     const { data } = await Axios.get(
       `https://cms.bekahmcdonald.com/wp-json/bm/v1/global`
