@@ -1,6 +1,9 @@
 <template lang="pug">
   main
-    h1 bekahmcdonald.com
+    div
+      .hero(v-if="hero")
+        img(:src="hero.image.url")
+
 </template>
 
 <script>
@@ -17,7 +20,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-h1 {
-  color: blue;
+.hero {
+  max-height: 72.5vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
 }
 </style>
