@@ -8,8 +8,8 @@
       .block(v-for="(block,index) in about.content" :key="block.heading + index")
         h2.heading {{ block.heading }}
         div(v-html="block.copy")
-  
-    skills(:content="skills")
+
+      skills(:skills="skills")
 
     div(class="lg:o-container")
       .work(id="work" v-if="work")

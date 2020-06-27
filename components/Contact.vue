@@ -21,9 +21,9 @@ export default {
       },
     },
     social: {
-      type: Object,
+      type: Array,
       default() {
-        return {}
+        return []
       },
     },
   },
