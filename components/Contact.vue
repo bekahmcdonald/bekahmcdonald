@@ -2,7 +2,8 @@
   .contact(id="contact" v-if="content")
     .o-container
       h2.heading {{ content.title }}
-      div(v-html="content.copy")
+      clipboard-confirmation(v-show="copied" :style="confirmPosition")
+      .copy(ref="copy" v-html="content.copy")
       
       .social(v-if="social")
         a.icon(v-for="link in social" :key="link.url" :href="link.url" rel="noopener noreferrer")
@@ -12,7 +13,14 @@
 </template>
 
 <script>
+import copyToClipboard from '@/assets/mixins/copyToClipboard'
+import ClipboardConfirmation from '@/components/ClipboardConfirmation'
+
 export default {
+  components: {
+    ClipboardConfirmation,
+  },
+  mixins: [copyToClipboard],
   props: {
     content: {
       type: Object,
@@ -25,6 +33,47 @@ export default {
       default() {
         return []
       },
+    },
+  },
+  data() {
+    return {
+      copied: false,
+      confirmPosition: {
+        top: 0,
+        left: 0,
+      },
+    }
+  },
+  mounted() {
+    this.replaceMailtoLinks()
+  },
+  methods: {
+    replaceMailtoLinks() {
+      const copy = this.$refs.copy
+      copy.querySelectorAll('a').forEach((anchor) => {
+        anchor.addEventListener('click', this.clickToCopy)
+      })
+    },
+    clickToCopy(e) {
+      e.preventDefault()
+      const email = event.target.href.replace('mailto:', '')
+      this.copyToClipboard(email)
+      this.displayCopyConfirmation(e)
+    },
+    displayCopyConfirmation(e) {
+      const mq = window.matchMedia('(max-width: 400px)')
+      if (mq.matches) {
+        this.confirmPosition.left = '20px'
+      } else {
+        this.confirmPosition.left = e.clientX + 'px'
+      }
+
+      this.confirmPosition.top = e.clientY + 'px'
+      this.copied = true
+
+      setTimeout(() => {
+        this.copied = false
+      }, 1000)
     },
   },
 }
@@ -53,10 +102,11 @@ export default {
 }
 
 .icon {
+  margin-right: 16px;
   max-height: 24px;
   max-width: 24px;
-  margin-right: 16px;
   transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+  user-select: none;
 
   @media (hover: hover) and (pointer: fine) {
     &:hover {
