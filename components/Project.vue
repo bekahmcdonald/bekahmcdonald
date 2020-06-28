@@ -1,11 +1,7 @@
 <template lang="pug">
   .project
     component.image-container(:is="link ? 'a' : 'div'" :href="link" rel="noopener noreferrer")
-      img.image(
-        v-if="project.thumbnail.image" 
-        :src="project.thumbnail.image.url" 
-        alt=""
-      )
+      lazy-image(:src="project.thumbnail.image")
     div.caption 
       component(:is="link ? 'a' : 'div'" :href="link" rel="noopener noreferrer")
         h3.label {{ project.thumbnail.caption }}
@@ -42,7 +38,7 @@ export default {
 }
 
 .image-container {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: $cotton;
   display: block;
   overflow: hidden;
   padding-bottom: (200% / 3);

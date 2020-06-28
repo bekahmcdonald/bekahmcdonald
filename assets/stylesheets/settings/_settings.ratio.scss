@@ -1,0 +1,15 @@
+// Settings
+
+// Ratios in use. Key represents first number.
+// Numbers in brackets represents the different
+// second numbers that can be paired with it.
+
+// eg. 2: (1 3 5) would create the ratios 2:1, 2:3 and 2:5;
+// eg. To create a 16:9 ratio class, you'd add 16: (9)
+
+// prettier-ignore
+$ratios: (
+  1: (1),
+  4: (3),
+  16: (9)
+);

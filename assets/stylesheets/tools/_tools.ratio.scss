@@ -1,0 +1,54 @@
+// Tools: Ratio
+
+@mixin ratio($width, $height) {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    padding-top: ($height / $width) * 100%;
+    width: 100%;
+  }
+
+  & > :first-child {
+    left: 0;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+// Uses the $ratios list in _settings/settings.ratios
+// to create utility classes based on the above function
+// eg. ratio-4:3, ratio-16:9
+
+@each $d, $n in $ratios {
+  @each $x in $n {
+    .ratio-#{$d}\:#{$x} {
+      @include ratio($d, $x);
+    }
+  }
+}
+
+// Tablet ratios
+@each $d, $n in $ratios {
+  @each $x in $n {
+    .md\:ratio-#{$d}\:#{$x} {
+      @include mq($from: md) {
+        @include ratio($d, $x);
+      }
+    }
+  }
+}
+
+// Desktop ratios
+@each $d, $n in $ratios {
+  @each $x in $n {
+    .lg\:ratio-#{$d}\:#{$x} {
+      @include mq($from: lg) {
+        @include ratio($d, $x);
+      }
+    }
+  }
+}

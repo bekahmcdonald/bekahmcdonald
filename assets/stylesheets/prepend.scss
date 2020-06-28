@@ -7,9 +7,14 @@
 // Settings
 @import 'settings/settings.breakpoints';
 @import 'settings/settings.colors';
+@import 'settings/settings.ratio';
 
 // Plugins
 @import '~sass-mq';
+
+// Tools
+@import 'tools/tools.transition';
+@import 'tools/tools.ratio';
 
 // Generic
 @import 'generic/generic.text';

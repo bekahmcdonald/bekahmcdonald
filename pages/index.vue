@@ -2,7 +2,7 @@
   main
     div
       .hero(v-if="hero")
-        img(:src="hero.image.url")
+        lazy-image(:src="hero.image" class="ratio-1:1 md:ratio-4:3 lg:ratio-16:9")
 
     .about.o-container(v-if="about")
       .block(v-for="(block,index) in about.content" :key="block.heading + index")
@@ -21,12 +21,14 @@
 
 <script>
 import Axios from 'axios'
+import LazyImage from '@/components/LazyImage'
 import Project from '@/components/Project'
 import Contact from '@/components/Contact'
 import Skills from '@/components/Skills'
 
 export default {
   components: {
+    LazyImage,
     Project,
     Contact,
     Skills,
@@ -42,11 +44,16 @@ export default {
 
 <style lang="scss" scoped>
 .hero {
-  max-height: 72.5vh;
+  background-color: $cotton;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+
+  /deep/ .image {
+    max-height: 72.5vh;
+  }
+
+  /deep/ img {
+    object-position: right;
+  }
 }
 
 .about {
