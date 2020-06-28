@@ -20,7 +20,8 @@
     "pug": "^3.0.0",
     "pug-plain-loader": "^1.0.0",
     "sass-loader": "^8.0.2",
-    "sass-mq": "^5.0.1"
+    "sass-mq": "^5.0.1",
+    "smoothscroll-polyfill": "^0.4.4"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.0.0",

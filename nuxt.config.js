@@ -43,7 +43,10 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: ['@/plugins/lazysizes.client.js'],
+  plugins: [
+    '@/plugins/lazysizes.client.js',
+    '@/plugins/smoothscroll.client.js',
+  ],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
