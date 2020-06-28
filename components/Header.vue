@@ -30,12 +30,12 @@ header {
 }
 
 .logo {
-  text-decoration: none;
   color: inherit;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1.3px;
   font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  text-decoration: none;
+  text-transform: uppercase;
   user-select: none;
 
   @include mq($from: md) {
@@ -50,14 +50,14 @@ header {
 nav {
   .link {
     @extend %label;
+    border-bottom: solid 1px transparent;
+    color: inherit;
     cursor: pointer;
     display: inline-block;
-    text-decoration: none;
-    color: inherit;
-    margin-left: 40px;
     font-weight: 400;
-    border-bottom: solid 1px transparent;
+    margin-left: 40px;
     padding-bottom: 2px;
+    text-decoration: none;
     transition: border-color 0.3s ease-in-out;
 
     @media (hover: hover) and (pointer: fine) {
