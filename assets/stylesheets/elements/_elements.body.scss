@@ -14,3 +14,7 @@ body {
     font-size: 22px;
   }
 }
+
+::selection {
+  background-color: rgba($sun, 0.5);
+}
