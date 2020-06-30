@@ -33,23 +33,27 @@ export default {
       {
         rel: 'apple-touch-icon',
         sizes: '180x180',
-        href: '/apple-touch-icon.png',
+        href: '/apple-touch-icon.png?v=oLJGaOglqd',
       },
       {
         rel: 'icon',
         type: 'image/png',
         sizes: '32x32',
-        href: '/favicon-32x32.png',
+        href: '/favicon-32x32.png?v=oLJGaOglqd',
       },
       {
         rel: 'icon',
         type: 'image/png',
         sizes: '16x16',
-        href: '/favicon-16x16.png',
+        href: '/favicon-16x16.png?v=oLJGaOglqd',
       },
-      { rel: 'manifest', href: '/site.webmanifest' },
-      { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#f8c34e' },
-
+      { rel: 'manifest', href: '/site.webmanifest?v=oLJGaOglqd' },
+      {
+        rel: 'mask-icon',
+        href: '/safari-pinned-tab.svg?v=oLJGaOglqd',
+        color: '#f8c34e',
+      },
+      { rel: 'shortcut icon', href: '/favicon.ico?v=oLJGaOglqd' },
       {
         href:
           'https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap',
