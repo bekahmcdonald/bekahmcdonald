@@ -16,6 +16,10 @@
   @extend %note;
 }
 
+.xsmall {
+  @extend %xsmall;
+}
+
 .small {
   @extend %small;
 }
