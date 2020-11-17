@@ -1,5 +1,5 @@
 <template lang="pug">
-  .project
+  .project.js-project(:data-project="project.thumbnail.caption")
     component.image-container(:is="link ? 'a' : 'div'" :href="link" rel="noopener noreferrer")
       lazy-image(:src="project.thumbnail.image")
     .meta 

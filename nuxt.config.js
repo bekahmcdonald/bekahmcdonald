@@ -72,6 +72,7 @@ export default {
   plugins: [
     '@/plugins/lazysizes.client.js',
     '@/plugins/smoothscroll.client.js',
+    '@/plugins/amplitude.client.js',
   ],
   /*
    ** Auto import components

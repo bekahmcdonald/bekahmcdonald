@@ -1,22 +1,24 @@
 <template lang="pug">
-  main
-    div
-      .hero(v-if="hero")
-        lazy-image(:src="hero.image" class="ratio-1:1 md:ratio-4:3 lg:ratio-16:9")
+main
+  div
+    .hero(v-if='hero')
+      lazy-image(:src='hero.image', class='ratio-1:1 md:ratio-4:3 lg:ratio-16:9')
 
-    .about.o-container(v-if="about")
-      .block(v-for="(block,index) in about.content" :key="block.heading + index")
-        h2.heading {{ block.heading }}
-        div(v-html="block.copy")
+  .about.o-container(v-if='about')
+    .block(
+      v-for='(block, index) in about.content',
+      :key='block.heading + index'
+    )
+      h2.heading {{ block.heading }}
+      div(v-html='block.copy')
 
-      skills(:skills="skills")
+    skills(:skills='skills')
 
-    div(class="lg:o-container")
-      .work(id="work" v-if="work")
-        project(v-for="project in work" :key="project.id" :project="project")
+  div(class='lg:o-container')
+    #work.work(v-if='work')
+      project(v-for='project in work', :key='project.id', :project='project')
 
-    contact(:content="contact" :social="social")
-    
+  contact(:content='contact', :social='social')
 </template>
 
 <script>
