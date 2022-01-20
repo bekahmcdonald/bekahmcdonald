@@ -16,7 +16,8 @@ export default {
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
-    title: 'Bekah McDonald | Front End Developer based in London',
+    title:
+      'Bekah McDonald | Web Developer specialising in React, WordPress and Shopify.',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -24,7 +25,7 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'I’m a front-end developer, with 3+ years of agency experience and a strong background in project management. I’m a fast learner, love teaching myself new things, and bring a project-management level of organisation to everything I do.',
+          'Web developer with 5+ years of agency experience and a strong background in project management. Specialises in React, WordPress and Shopify.',
       },
       { name: 'msapplication-TileColor', content: '#f8c34e' },
       { name: 'theme-color', content: '#ffffff' },
@@ -55,8 +56,7 @@ export default {
       },
       { rel: 'shortcut icon', href: '/favicon.ico?v=oLJGaOglqd' },
       {
-        href:
-          'https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap',
+        href: 'https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap',
         rel: 'stylesheet',
       },
     ],
