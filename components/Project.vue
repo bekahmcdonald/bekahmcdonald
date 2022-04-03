@@ -45,7 +45,7 @@ export default {
   background-color: $cotton;
   display: block;
   overflow: hidden;
-  padding-bottom: (200% / 3);
+  padding-bottom: calc(200% / 3);
   position: relative;
 }
 

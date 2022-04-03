@@ -49,11 +49,11 @@ export default {
   background-color: $cotton;
   overflow: hidden;
 
-  /deep/ .image {
+  ::v-deep .image {
     max-height: 72.5vh;
   }
 
-  /deep/ img {
+  ::v-deep img {
     object-position: right;
   }
 }

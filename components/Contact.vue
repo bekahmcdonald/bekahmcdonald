@@ -84,7 +84,7 @@ export default {
   background-color: $cotton;
   padding: 32px 0;
 
-  /deep/ a {
+  ::v-deep a {
     color: inherit;
     text-decoration-thickness: 0.5px;
 
