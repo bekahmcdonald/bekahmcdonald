@@ -3,7 +3,7 @@
 body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-family: $inter;
   text-rendering: optimizeLegibility;
   color: $ink;
   font-size: 18px;

@@ -48,7 +48,7 @@ export default {
       },
     ],
   },
-  css: ['@/assets/stylesheets/style.scss', '@/assets/stylesheets/fonts.scss'],
+  css: ['@/assets/stylesheets/fonts.scss', '@/assets/stylesheets/style.scss'],
   plugins: [
     '@/plugins/lazysizes.client.js',
     '@/plugins/smoothscroll.client.js',
