@@ -2,21 +2,15 @@
 main
   div
     .hero(v-if='hero')
-      lazy-image(:src='hero.image', class='ratio-1:1 md:ratio-4:3 lg:ratio-16:9')
 
   .about.o-container(v-if='about')
     .block(
       v-for='(block, index) in about.content',
       :key='block.heading + index'
     )
-      h2.heading {{ block.heading }}
       div(v-html='block.copy')
 
     skills(:skills='skills')
-
-  div(class='lg:o-container')
-    #work.work(v-if='work')
-      project(v-for='project in work', :key='project.id', :project='project')
 
   contact(:content='contact', :social='social')
 </template>
@@ -24,14 +18,12 @@ main
 <script>
 import Axios from 'axios'
 import LazyImage from '@/components/LazyImage'
-import Project from '@/components/Project'
 import Contact from '@/components/Contact'
 import Skills from '@/components/Skills'
 
 export default {
   components: {
     LazyImage,
-    Project,
     Contact,
     Skills,
   },
@@ -88,23 +80,6 @@ export default {
     display: flex;
     flex-wrap: wrap;
     margin-left: -40px;
-
-    .project {
-      width: 50%;
-      padding-left: 40px;
-    }
-  }
-
-  @include mq(lg, xl) {
-    .project:nth-child(3n - 2) {
-      width: 100%;
-    }
-  }
-
-  @include mq($from: xl) {
-    .project {
-      width: 50%;
-    }
   }
 }
 </style>
