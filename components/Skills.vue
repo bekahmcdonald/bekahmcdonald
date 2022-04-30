@@ -24,7 +24,7 @@ export default {
 
 <style lang="scss" scoped>
 .heading {
-  font-size: 6rem;
+  font-size: clamped(4rem, 6rem, breakpoint(xs), breakpoint(md));
   display: inline-grid;
   grid-template-areas: 'content';
   letter-spacing: 0.5px;
@@ -36,7 +36,7 @@ export default {
   .solid {
     font-family: $solid;
     color: $london;
-    transform: translate(-1.5px, -2px);
+    transform: translate(-0.15rem, -0.2rem);
   }
   .outline {
     font-family: $outline;
@@ -50,19 +50,19 @@ export default {
   font-weight: 500;
 }
 .skill-list {
-  margin-bottom: 32px;
-  margin-left: -8px;
-  margin-top: -8px;
-  padding-top: 8px;
+  margin-bottom: 3.2rem;
+  margin-left: -0.8rem;
+  margin-top: -0.8rem;
+  padding-top: 0.8rem;
 }
 
 .skill {
   @extend %label;
   background-color: darken($cotton, 5%);
   display: inline-block;
-  margin-left: 8px;
-  margin-top: 8px;
-
+  margin-left: 0.8rem;
+  margin-top: 0.8rem;
+  padding: 0.75rem 1rem;
   user-select: none;
 }
 </style>
