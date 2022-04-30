@@ -1,8 +1,21 @@
 // Settings: Breakpoints
 
 $mq-breakpoints: (
+  xs: 320px,
   sm: 500px,
   md: 700px,
   lg: 1000px,
   xl: 1400px,
 );
+
+
+$minVw: 32rem;
+
+@function breakpoint($key) {
+  @if map-has-key($mq-breakpoints, $key) {
+    @return (map-get($mq-breakpoints, $key));
+  }
+
+  @warn "Unknown `#{$key}` in $breakpoints.";
+  @return null;
+}

@@ -2,30 +2,30 @@
 
 .o-container {
   margin: 0 auto;
-  max-width: 1400px;
-  padding: 0 20px;
+  max-width: 90rem;
+  padding: 0 2rem;
 
   @include mq($from: sm) {
-    padding: 0 40px;
+    padding: 0 4rem;
   }
 
   @include mq($from: md) {
-    padding: 0 60px;
+    padding: 0 6rem;
   }
 }
 
 .md\:o-container {
   @include mq($from: md) {
     margin: 0 auto;
-    max-width: 1400px;
-    padding: 0 60px;
+    max-width: 90rem;
+    padding: 0 6rem;
   }
 }
 
 .lg\:o-container {
   @include mq($from: lg) {
     margin: 0 auto;
-    max-width: 1400px;
-    padding: 0 60px;
+    max-width: 90rem;
+    padding: 0 6rem;
   }
 }

@@ -1,6 +1,5 @@
 <template lang="pug">
   div
-    the-header
     nuxt
     the-footer
 </template>

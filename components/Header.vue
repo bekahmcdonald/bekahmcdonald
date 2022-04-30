@@ -1,14 +1,16 @@
 <template lang="pug">
-  .o-container
-    header
-      nuxt-link(to="/").logo Bekah
-      nav 
-        .link(@click="scrollTo('work')") Work
-        .link(@click="scrollTo('contact')") Contact
+  header
+    nuxt-link(to="/")
+      the-logo
 </template>
 
 <script>
+import Logo from '@/components/Logo'
+
 export default {
+  components: {
+    'the-logo': Logo,
+  },
   methods: {
     scrollTo(id) {
       document.getElementById(id).scrollIntoView({ behavior: 'smooth' })
@@ -20,13 +22,15 @@ export default {
 <style lang="scss" scoped>
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  height: 64px;
+  z-index: 1;
+  padding: 3rem 0 1rem;
+}
 
-  @include mq($from: lg) {
-    height: 80px;
-  }
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .logo {
@@ -44,27 +48,6 @@ header {
 
   @include mq($from: md) {
     font-size: 24px;
-  }
-}
-
-nav {
-  .link {
-    @extend %label;
-    border-bottom: solid 1px transparent;
-    color: inherit;
-    cursor: pointer;
-    display: inline-block;
-    font-weight: 400;
-    margin-left: 40px;
-    padding-bottom: 2px;
-    text-decoration: none;
-    transition: border-color 0.3s ease-in-out;
-
-    @media (hover: hover) and (pointer: fine) {
-      &:hover {
-        border-bottom-color: currentColor;
-      }
-    }
   }
 }
 </style>

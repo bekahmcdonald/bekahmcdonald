@@ -1,0 +1,18 @@
+// Tools: Fluid Type
+@use "sass:math";
+
+// Usage: font-size: clamped(1.6rem, 2.1rem, breakpoint(sm), breakpoint(lg))
+
+@function to-rems($px) {
+  $rems: math.div($px, 10px) * 1rem;
+  @return $rems;
+}
+
+@function clamped($minFs, $maxFs, $minBp, $maxBp) {
+  $minBpRems: to-rems($minBp);
+  $maxBpRems: to-rems($maxBp);
+  $slope: math.div(($maxFs - $minFs), ($maxBpRems - $minBpRems));
+  $y-intercept: $minFs - ($slope * $minBpRems);
+
+  @return clamp(#{$minFs}, #{$slope * 100}vw + #{$y-intercept}, #{$maxFs});
+}
