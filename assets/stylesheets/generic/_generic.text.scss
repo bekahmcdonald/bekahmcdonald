@@ -7,13 +7,26 @@ $solid: 'Electric Dreams';
 $inter: 'Inter', Arial, Helvetica, sans-serif;
 
 %heading {
-  font-size: 21px;
-  font-weight: 400;
-  margin-bottom: 12px;
+  font-size: clamped(4rem, 6rem, breakpoint(xs), breakpoint(md));
+  display: inline-grid;
+  grid-template-areas: 'content';
+  letter-spacing: 0.5px;
 
-  @include mq($from: lg) {
-    font-size: 28px;
-    margin-bottom: 16px;
+  .solid,
+  .outline {
+    grid-area: content;
+  }
+
+  .solid {
+    font-family: $solid;
+    color: $london;
+    transform: translate(-0.15rem, -0.2rem);
+  }
+
+  .outline {
+    font-family: $outline;
+    position: relative;
+    z-index: 1;
   }
 }
 

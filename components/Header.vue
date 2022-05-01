@@ -1,7 +1,8 @@
 <template lang="pug">
-  header
-    nuxt-link(to="/")
-      the-logo
+  header.o-container
+    .header
+      nuxt-link(to="/")
+        the-logo
 </template>
 
 <script>
@@ -20,12 +21,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-header {
+.header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   z-index: 1;
   padding: 3rem 0 1rem;
+
+  @include mq($from: md) {
+    padding-top: 8rem;
+  }
 }
 
 a {

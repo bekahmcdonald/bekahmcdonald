@@ -106,28 +106,6 @@ export default {
   }
 }
 
-.heading {
-  font-size: clamped(4rem, 6rem, breakpoint(xs), breakpoint(md));
-  display: inline-grid;
-  grid-template-areas: 'content';
-  letter-spacing: 0.5px;
-
-  .solid,
-  .outline {
-    grid-area: content;
-  }
-  .solid {
-    font-family: $solid;
-    color: $london;
-    transform: translate(-0.15rem, -0.2rem);
-  }
-  .outline {
-    font-family: $outline;
-    position: relative;
-    z-index: 1;
-  }
-}
-
 .social {
   display: flex;
   margin: 4rem 0;
