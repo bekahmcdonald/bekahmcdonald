@@ -26,10 +26,12 @@ export default {
     return data
   },
   head: {
-    meta: {
-      name: 'robots',
-      content: 'noindex',
-    },
+    meta: [
+      {
+        name: 'robots',
+        content: 'noindex',
+      },
+    ],
   },
 }
 </script>
