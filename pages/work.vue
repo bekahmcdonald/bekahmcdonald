@@ -4,10 +4,10 @@
       h2.heading
         .outline {{ work.title }}
         .solid {{ work.title }}
-      .text {{ work.intro }}
+      .text(v-html="work.intro")
 
       .projects
-        project(v-for="project in work" :project="project")
+        project(v-for="project in work.projects" :project="project")
       
 </template>
 
