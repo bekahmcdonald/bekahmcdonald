@@ -8,8 +8,8 @@
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="JavaScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="Git" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="ZSH" src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Z_Shell_Logo_Color_Horizontal.svg" />
-  
 </div>
+<br >
 
 ### Usually
 
@@ -24,6 +24,8 @@
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="Yarn" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/yarn/yarn-original-wordmark.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="PHP" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" />
 </div>
+
+<br >
 
 ### Sometimes
 
@@ -40,6 +42,8 @@
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="Docker" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="Laravel + Blade" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg" />
 </div>
+
+<br >
 
 ### Occasionally
 
