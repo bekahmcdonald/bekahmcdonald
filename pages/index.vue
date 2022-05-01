@@ -1,37 +1,22 @@
 <template lang="pug">
-main
-  div
-    .hero(v-if='hero')
-      lazy-image(:src='hero.image', class='ratio-1:1 md:ratio-4:3 lg:ratio-16:9')
-
-  .about.o-container(v-if='about')
-    .block(
-      v-for='(block, index) in about.content',
-      :key='block.heading + index'
-    )
-      h2.heading {{ block.heading }}
-      div(v-html='block.copy')
-
+  main
+    about(:about="about")
+    .about
     skills(:skills='skills')
-
-  div(class='lg:o-container')
-    #work.work(v-if='work')
-      project(v-for='project in work', :key='project.id', :project='project')
-
-  contact(:content='contact', :social='social')
+    contact(:content='contact', :social='social')
 </template>
 
 <script>
 import Axios from 'axios'
+import About from '@/components/About'
 import LazyImage from '@/components/LazyImage'
-import Project from '@/components/Project'
 import Contact from '@/components/Contact'
 import Skills from '@/components/Skills'
 
 export default {
   components: {
+    About,
     LazyImage,
-    Project,
     Contact,
     Skills,
   },
@@ -43,68 +28,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss" scoped>
-.hero {
-  background-color: $cotton;
-  overflow: hidden;
-
-  /deep/ .image {
-    max-height: 72.5vh;
-  }
-
-  /deep/ img {
-    object-position: right;
-  }
-}
-
-.about {
-  margin-top: 64px;
-  margin-bottom: 64px;
-
-  @include mq($from: md) {
-    max-width: 60ch;
-    margin-top: 80px;
-    margin-bottom: 80px;
-  }
-
-  @include mq($from: lg) {
-    margin-top: 120px;
-    margin-bottom: 120px;
-  }
-}
-
-.block {
-  margin-bottom: 48px;
-
-  &:last-of-type {
-    margin-bottom: 0;
-  }
-}
-
-.work {
-  @include mq($from: lg) {
-    margin-bottom: 120px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -40px;
-
-    .project {
-      width: 50%;
-      padding-left: 40px;
-    }
-  }
-
-  @include mq(lg, xl) {
-    .project:nth-child(3n - 2) {
-      width: 100%;
-    }
-  }
-
-  @include mq($from: xl) {
-    .project {
-      width: 50%;
-    }
-  }
-}
-</style>

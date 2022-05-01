@@ -6,3 +6,27 @@
   font-style: italic;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Electric Dreams Outline';
+  src: url('~assets/fonts/ElectricDreamsOutlineBold.woff2') format('woff2'),
+    url('~assets/fonts/ElectricDreamsOutlineBold.woff') format('woff');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Electric Dreams';
+  src: url('~assets/fonts/ElectricDreamsSolid.woff2') format('woff2'),
+    url('~assets/fonts/ElectricDreamsSolid.woff') format('woff');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('~assets/fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+}

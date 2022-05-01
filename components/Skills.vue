@@ -1,6 +1,8 @@
 <template lang="pug">
-  .skills(v-if="skills")
-    h2.heading {{ skills.heading }}
+  .skills.o-container(v-if="skills")
+    h2.heading
+      .outline {{ skills.heading }}
+      .solid {{ skills.heading }}
     div(v-for="section in skills.preference" :key="section.heading")
       h3.subheading {{ section.heading }}
       ul.skill-list
@@ -21,20 +23,24 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.subheading {
+  font-family: $inter;
+  font-weight: 500;
+}
 .skill-list {
-  margin-bottom: 32px;
-  margin-left: -8px;
-  margin-top: -8px;
-  padding-top: 8px;
+  margin-bottom: 3.2rem;
+  margin-left: -0.8rem;
+  margin-top: -0.8rem;
+  padding-top: 0.8rem;
 }
 
 .skill {
   @extend %label;
   background-color: darken($cotton, 5%);
   display: inline-block;
-  margin-left: 8px;
-  margin-top: 8px;
-  padding: 8px 12px;
+  margin-left: 0.8rem;
+  margin-top: 0.8rem;
+  padding: 0.75rem 1rem;
   user-select: none;
 }
 </style>

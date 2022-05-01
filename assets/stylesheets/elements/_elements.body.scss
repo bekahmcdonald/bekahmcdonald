@@ -1,20 +1,32 @@
 // Elements: Body
 
+html {
+  background-color: $powder;
+  font-size: 10px;
+}
+
 body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-family: $inter;
+  background-color: $white;
   text-rendering: optimizeLegibility;
   color: $ink;
-  font-size: 18px;
+  font-size: 10px;
   line-height: 1.44;
   font-weight: 300;
+}
 
-  @include mq($from: lg) {
-    font-size: 22px;
-  }
+#__nuxt {
+  animation: fadeIn 0.5s ease-in-out;
 }
 
 ::selection {
   background-color: rgba($sun, 0.5);
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0 }
+  to { opacity: 1 }
 }

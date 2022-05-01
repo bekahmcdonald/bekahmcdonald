@@ -9,10 +9,11 @@
 @import 'settings/settings.colors';
 @import 'settings/settings.ratio';
 
-// Plugins
-@import '~sass-mq';
+// Vendor
+@import 'vendor/vendor.sass-mq';
 
 // Tools
+@import 'tools/tools.fluid-type';
 @import 'tools/tools.transition';
 @import 'tools/tools.ratio';
 

@@ -1,20 +1,7 @@
 import path from 'path'
 
 export default {
-  /*
-   ** Nuxt rendering mode
-   ** See https://nuxtjs.org/api/configuration-mode
-   */
-  mode: 'universal',
-  /*
-   ** Nuxt target
-   ** See https://nuxtjs.org/api/configuration-target
-   */
   target: 'static',
-  /*
-   ** Headers of the page
-   ** See https://nuxtjs.org/api/configuration-head
-   */
   head: {
     title:
       'Bekah McDonald | Web Developer specialising in React, WordPress and Shopify.',
@@ -34,91 +21,52 @@ export default {
       {
         rel: 'apple-touch-icon',
         sizes: '180x180',
-        href: '/apple-touch-icon.png?v=oLJGaOglqd',
+        href: '/apple-touch-icon.png?v=wjvAygHTit',
       },
       {
         rel: 'icon',
         type: 'image/png',
         sizes: '32x32',
-        href: '/favicon-32x32.png?v=oLJGaOglqd',
+        href: '/favicon-32x32.png?v=wjvAygHTit',
       },
       {
         rel: 'icon',
         type: 'image/png',
         sizes: '16x16',
-        href: '/favicon-16x16.png?v=oLJGaOglqd',
+        href: '/favicon-16x16.png?v=wjvAygHTit',
       },
-      { rel: 'manifest', href: '/site.webmanifest?v=oLJGaOglqd' },
+      { rel: 'manifest', href: '/site.webmanifest?v=wjvAygHTit' },
       {
         rel: 'mask-icon',
-        href: '/safari-pinned-tab.svg?v=oLJGaOglqd',
+        href: '/safari-pinned-tab.svg?v=wjvAygHTit',
         color: '#f8c34e',
       },
-      { rel: 'shortcut icon', href: '/favicon.ico?v=oLJGaOglqd' },
+      { rel: 'shortcut icon', href: '/favicon.ico?v=wjvAygHTit' },
       {
-        href: 'https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap',
         rel: 'stylesheet',
       },
     ],
   },
-  /*
-   ** Global CSS
-   */
-  css: ['@/assets/stylesheets/style.scss', '@/assets/stylesheets/fonts.scss'],
-  /*
-   ** Plugins to load before mounting the App
-   ** https://nuxtjs.org/guide/plugins
-   */
+  css: ['@/assets/stylesheets/fonts.scss', '@/assets/stylesheets/style.scss'],
   plugins: [
     '@/plugins/lazysizes.client.js',
     '@/plugins/smoothscroll.client.js',
     '@/plugins/amplitude.client.js',
   ],
-  /*
-   ** Auto import components
-   ** See https://nuxtjs.org/api/configuration-components
-   */
   components: true,
-  /*
-   ** Nuxt.js dev-modules
-   */
-  buildModules: [
-    // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module',
-  ],
-  /*
-   ** Nuxt.js modules
-   */
-  modules: [
-    // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
-  ],
-  /*
-   ** Axios module configuration
-   ** See https://axios.nuxtjs.org/options
-   */
+  buildModules: ['@nuxtjs/eslint-module'],
+  modules: ['@nuxtjs/axios'],
   axios: {},
-  /*
-   ** Build configuration
-   ** See https://nuxtjs.org/api/configuration-build/
-   */
   build: {
     extend(config, { isDev, isClient, loaders }) {
-      loaders.scss.prependData = `@import "${path.resolve(
+      loaders.scss.additionalData = `@import "${path.resolve(
         __dirname,
         'assets/stylesheets/prepend.scss'
       )}";`
     },
     postcss: {
-      // Add plugin names as key and arguments as value
-      // Install them before as dependencies with npm or yarn
-      plugins: {
-        // Disable a plugin by passing false as value
-        // 'postcss-url': false,
-        // 'postcss-nested': {},
-      },
+      plugins: {},
       preset: {
-        // Change the postcss-preset-env settings
         autoprefixer: {
           grid: true,
         },

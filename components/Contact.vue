@@ -1,7 +1,10 @@
 <template lang="pug">
   .contact(id="contact" v-if="content")
     .o-container
-      h2.heading {{ content.title }}
+      h2.heading
+        .outline {{ content.title }}
+        .solid {{ content.title }}
+
       clipboard-confirmation(v-show="copied" :style="confirmPosition")
       .copy.js-email(ref="copy" data-location="footer" v-html="content.copy")
       
@@ -54,12 +57,14 @@ export default {
         anchor.addEventListener('click', this.clickToCopy)
       })
     },
+
     clickToCopy(e) {
       e.preventDefault()
       const email = event.target.href.replace('mailto:', '')
       this.copyToClipboard(email)
       this.displayCopyConfirmation(e)
     },
+
     displayCopyConfirmation(e) {
       const mq = window.matchMedia('(max-width: 400px)')
       if (mq.matches) {
@@ -81,10 +86,15 @@ export default {
 
 <style lang="scss" scoped>
 .contact {
-  background-color: $cotton;
-  padding: 32px 0;
+  padding: 5rem 0 4rem;
+  margin-top: 4rem;
 
-  /deep/ a {
+  @include mq($from: md) {
+    margin-top: 10rem;
+    padding-bottom: 8rem;
+  }
+
+  ::v-deep a {
     color: inherit;
     text-decoration-thickness: 0.5px;
 
@@ -98,19 +108,19 @@ export default {
 
 .social {
   display: flex;
-  margin: 32px 0;
+  margin: 4rem 0;
 }
 
 .icon {
-  margin-right: 16px;
-  max-height: 24px;
-  max-width: 24px;
+  margin-right: 1.5rem;
+  max-height: 3.5rem;
+  max-width: 3.5rem;
   transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
   user-select: none;
 
   @media (hover: hover) and (pointer: fine) {
     &:hover {
-      opacity: 0.75;
+      opacity: 0.9;
       transform: scale(1.1);
     }
   }
@@ -121,6 +131,14 @@ export default {
 
   img {
     object-fit: contain;
+  }
+}
+
+.copy {
+  font-size: 1.6rem;
+
+  @include mq($from: md) {
+    font-size: 2rem;
   }
 }
 </style>

@@ -9,18 +9,29 @@
 
 <style lang="scss" scoped>
 footer {
-  background-color: $cotton;
-  padding: 8px 0 24px;
+  padding: 1rem 0 2.5rem;
 
   a {
     color: inherit;
     text-decoration: none;
+
+    &[href*='vue'] {
+      color: #33a06f;
+      font-weight: 500;
+      transition: color 0.2s ease-in-out;
+
+      @media (hover: hover) and (pointer: fine) {
+        &:hover {
+          color: $ink;
+        }
+      }
+    }
   }
 
   .content {
     @include mq($until: lg) {
       *:last-child {
-        margin-top: 8px;
+        margin-top: 1rem;
       }
     }
     @include mq($from: lg) {

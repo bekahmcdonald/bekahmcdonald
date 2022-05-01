@@ -15,17 +15,17 @@
   pointer-events: none;
 
   @media (min-width: 401px) {
-    transform: translate(-50%, -200%);
+    transform: translate(-50%, -160%);
   }
 }
 
 .message {
-  background-color: #7dcfb6;
+  background-color: $pink;
+  font-family: $solid;
   border-radius: 3px;
   box-shadow: 0px 2px 4px 0 rgba($ink, 0.1);
   color: white;
   font-size: 16px;
-  font-weight: bold;
   padding: 4px 8px;
   position: relative;
   text-shadow: 0px 1px 1px rgba($ink, 0.1);
