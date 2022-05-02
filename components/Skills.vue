@@ -36,7 +36,7 @@ export default {
 
 .skill {
   @extend %label;
-  background-color: darken($cotton, 5%);
+  background-color: lighten($powder, 15%);
   display: inline-block;
   margin-left: 0.8rem;
   margin-top: 0.8rem;

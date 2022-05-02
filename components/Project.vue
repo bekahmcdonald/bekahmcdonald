@@ -103,18 +103,24 @@ export default {
   grid-area: tags;
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 .tag {
   @extend %label;
-  font-size: 12px;
-  background-color: darken($cotton, 5%);
+  font-size: 1.1rem;
+  background-color: lighten($powder, 15%);
   display: inline-block;
-  margin-left: 8px;
-  margin-top: 8px;
-  padding: 4px 6px;
+  margin-left: 0.8rem;
+  padding: 0 0.6rem;
+  margin-top: 0.8rem;
   user-select: none;
   font-weight: 300;
+
+  @include mq($from: md) {
+    font-size: 1.2rem;
+    padding: 0.4rem 0.6rem;
+  }
 }
 
 .credit {
@@ -125,8 +131,12 @@ export default {
 
 .url {
   grid-area: url;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 500;
   text-align: left;
+
+  @include mq($from: md) {
+    font-size: 2rem;
+  }
 }
 </style>
