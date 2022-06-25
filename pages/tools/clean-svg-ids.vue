@@ -307,6 +307,7 @@ button {
   flex-direction: column;
   height: 0;
   visibility: hidden;
+  overflow: hidden;
 }
 
 .fields {
