@@ -3,7 +3,9 @@
     section
       h1.title Clean SVG IDs
       p.intro Prevent ID conflicts by replacing IDs with a random string.
-      textarea.input(v-model="input" @click="setSubmitted(false)" spellcheck="false" autofocus rows="10" placeholder="Paste your svg code here")
+      
+      .input-wrapper
+        textarea.input(v-model="input" @click="setSubmitted(false)" spellcheck="false" autofocus rows="10" placeholder="Paste your svg code here")
       .fields
         .options
           label.option 
@@ -299,6 +301,11 @@ button {
     background-color: $white;
     color: $royal;
   }
+}
+
+.input-wrapper,
+.output-wrapper {
+  padding: 5px;
 }
 
 .output-wrapper {
