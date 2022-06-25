@@ -200,7 +200,7 @@ main {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  padding: 30px 16px 0;
+  padding: 30px 10px 0;
 
   @include mq($from: md) {
     padding: 50px 50px 0;
@@ -303,6 +303,7 @@ button {
   }
 }
 
+.fields,
 .input-wrapper,
 .output-wrapper {
   padding: 5px;
