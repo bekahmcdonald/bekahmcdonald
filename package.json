@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.11.0",
+    "@nuxtjs/gtm": "^2.4.0",
     "amplitude-js": "7.2.1",
     "gsap": "^3.10.4",
     "lazysizes": "^5.2.2",

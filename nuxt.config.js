@@ -55,7 +55,10 @@ export default {
   ],
   components: true,
   buildModules: ['@nuxtjs/eslint-module'],
-  modules: ['@nuxtjs/axios'],
+  modules: ['@nuxtjs/axios', '@nuxtjs/gtm'],
+  gtm: {
+    id: 'GTM-PMDTP7S',
+  },
   axios: {},
   build: {
     extend(config, { isDev, isClient, loaders }) {
