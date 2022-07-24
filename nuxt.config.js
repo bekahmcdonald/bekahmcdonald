@@ -4,7 +4,7 @@ export default {
   target: 'static',
   head: {
     title:
-      'Bekah McDonald | Web Developer specialising in React, WordPress and Shopify.',
+      'Bekah McDonald | Freelance web developer based in East London, specialising in WordPress, Shopify and web animation.',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -12,7 +12,7 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Web developer with 5+ years of agency experience and a strong background in project management. Specialises in React, WordPress and Shopify.',
+          'Freelance web developer based in East London, specialising in WordPress, Shopify and web animation.',
       },
       { name: 'msapplication-TileColor', content: '#f8c34e' },
       { name: 'theme-color', content: '#ffffff' },
