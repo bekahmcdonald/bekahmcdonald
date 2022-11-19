@@ -4,10 +4,12 @@
 
 <div style="display: flex; align-items: center">
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="HTML5" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />&ensp;
+  <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="SCSS" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="CSS3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="JavaScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="Git" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="ZSH" src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Z_Shell_Logo_Color_Horizontal.svg" />
+  <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="GSAP" src="https://cdn.worldvectorlogo.com/logos/gsap-greensock.svg" />&ensp;
 </div>
 <br >
 
@@ -16,10 +18,8 @@
 <div style="display: flex; align-items: center">
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="WordPress" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="React" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />&ensp;
-  <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="SCSS" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />&ensp;
-  <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="GSAP" src="https://cdn.worldvectorlogo.com/logos/gsap-greensock.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="Webpack" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg" />&ensp;
-  <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="Pug" src="https://symbols.getvecta.com/stencil_92/58_pug-icon.45a265fc64.svg" />&ensp;
+  <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="Pug" src="https://4008838.fs1.hubspotusercontent-na1.net/hubfs/4008838/supported-pug.png" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="JSON" src="https://upload.wikimedia.org/wikipedia/commons/c/c9/JSON_vector_logo.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="Yarn" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/yarn/yarn-original-wordmark.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="PHP" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" />
@@ -31,7 +31,7 @@
 
 <div style="display: flex; align-items: center">
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="Shopify" src="https://cdn.freebiesupply.com/logos/large/2x/shopify-logo-svg-vector.svg" />&ensp;
-  <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="Shopify" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gatsby/gatsby-plain.svg" />&ensp;
+  <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="Gatsby" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gatsby/gatsby-plain.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="Vue" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="Nuxt" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="PostCSS" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/PostCSS_Logo.svg/450px-PostCSS_Logo.svg.png" />&ensp;
