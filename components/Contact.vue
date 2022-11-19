@@ -9,7 +9,7 @@
       .copy.js-email(ref="copy" data-location="footer" v-html="content.copy")
       
       .social(v-if="social")
-        a.icon.js-social-icon(:data-icon="link.platform" v-for="link in social" :key="link.url" :href="link.url" rel="noopener noreferrer")
+        a.icon.js-social-icon(:data-icon="link.platform" v-for="link in social" :key="link.url" :href="link.url" rel="me noopener noreferrer")
           img(v-if="link.icon" :alt="link.platform" :src="link.icon")
           span(v-else) {{ link.platform }}
 
