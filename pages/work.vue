@@ -7,17 +7,19 @@
       .text(v-html="work.intro")
 
       .projects
-        project(v-for="project in work.projects" :project="project")
-      
+        project(v-for="project in work.projects" :key="project.id" :project="project")
+    contact(:content='contact', :social='social')
 </template>
 
 <script>
 import Axios from 'axios'
 import Project from '@/components/Project'
+import Contact from '@/components/Contact'
 
 export default {
   components: {
     Project,
+    Contact,
   },
   async asyncData({ params }) {
     const { data } = await Axios.get(
