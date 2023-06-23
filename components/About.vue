@@ -6,10 +6,17 @@
         :key='block.heading + index'
       )
         div(v-html='block.copy')
+    girl-code
 </template>
 
 <script>
+import GirlCode from '@/components/GirlCode'
+
+
 export default {
+  components: {
+    GirlCode
+  },
   props: {
     about: {
       type: Object,
@@ -24,7 +31,7 @@ export default {
 <style lang="scss" scoped>
 .about {
   font-size: 1.8rem;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
   margin-left: 0;
 
   @include mq($from: md) {
