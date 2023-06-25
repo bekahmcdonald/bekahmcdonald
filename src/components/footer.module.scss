@@ -1,0 +1,27 @@
+.footer {
+  padding: 1rem 0 2.5rem;
+
+  a {
+    color: inherit;
+    text-decoration-thickness: 0.1em;
+    text-underline-offset: 2px;
+    @include transition($ease, opacity);
+
+    @include hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+
+  @include mq($from: lg) {
+    row-gap: 1rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

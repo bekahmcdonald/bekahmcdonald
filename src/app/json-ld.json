@@ -1,0 +1,24 @@
+{
+  "@context": "http://www.schema.org",
+  "@type": "person",
+  "name": "Bekah McDonald",
+  "jobTitle": "Freelance web developer",
+  "hasOccupation": {
+    "@type": "Occupation",
+    "name": "Freelance web developer"
+  },
+  "url": "https://bekahmcdonald.com",
+  "sameAs": [
+    "https://github.com/bekahmcdonald"
+  ],
+  "image": "https://cms.bekahmcdonald.com/wp-content/uploads/2020/06/2018-04-26-1-2048x1365.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "London",
+    "addressCountry": "UK"
+  },
+  "email": "bekah@bekahmcdonald.com",
+  "birthDate": "1988-05-11",
+  "alumniOf": "London Metropolitan University",
+  "birthPlace": "Ascot, UK"
+}

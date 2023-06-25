@@ -1,0 +1,21 @@
+// Tools: Clamped
+
+@use "sass:math";
+
+@function to-rems($px) {
+  $rems: math.div($px, 16) * 1rem;
+
+  @return $rems;
+}
+
+@function clamped($min-size, $max-size, $min-bp: xs, $max-bp: xl) {
+  $min-screen: breakpoint($min-bp);
+  $max-screen: breakpoint($max-bp);
+  $min-screen-rems: to-rems($min-screen);
+  $max-screen-rems: to-rems($max-screen);
+  $slope: math.div(($max-size - $min-size), ($max-screen-rems - $min-screen-rems));
+  $y-intercept: $min-size - ($slope * $min-screen-rems);
+
+  @return clamp(#{$min-size}, #{$slope * 100}vw + #{$y-intercept}, #{$max-size});
+  @warn "Unknown `#{$min-bp}` in $mq-breakpoints.";
+}

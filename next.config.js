@@ -1,4 +1,14 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const path = require("path");
+const nextConfig = {
+  sassOptions: {
+    additionalData: `@import "${path.resolve(
+      __dirname,
+      "src/assets/styles/mixins.scss"
+    )}";`,
+  },
+};
 
-module.exports = nextConfig
+console.log(__dirname);
+
+module.exports = nextConfig;

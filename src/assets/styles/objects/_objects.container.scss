@@ -1,0 +1,31 @@
+// Objects: Container
+
+.o-container {
+  margin: 0 auto;
+  max-width: 58rem;
+  padding: 0 1.25rem;
+
+  @include mq($from: sm) {
+    padding: 0 2.5rem;
+  }
+
+  @include mq($from: md) {
+    padding: 0 3.75rem;
+  }
+}
+
+.md\:o-container {
+  @include mq($from: md) {
+    margin: 0 auto;
+    max-width: 58rem;
+    padding: 0 3.75rem;
+  }
+}
+
+.lg\:o-container {
+  @include mq($from: lg) {
+    margin: 0 auto;
+    max-width: 58rem;
+    padding: 0 3.75rem;
+  }
+}

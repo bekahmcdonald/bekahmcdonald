@@ -1,0 +1,21 @@
+.subheading {
+  font-family: $inter;
+  font-weight: 500;
+}
+
+.skillList {
+  margin-bottom: 2rem;
+  margin-left: -0.5rem;
+  margin-top: -0.5rem;
+  padding-top: 0.5rem;
+}
+
+.skill {
+  @extend %label;
+  background-color: lighten($powder, 15%);
+  display: inline-block;
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 0.46875rem 0.625rem;
+  user-select: none;
+}

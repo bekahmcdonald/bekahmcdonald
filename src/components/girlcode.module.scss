@@ -1,0 +1,42 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.girlcode {
+  cursor: pointer;
+  display: block;
+  width: 12.5rem;
+  height: 12.5rem;
+  margin: 1.875rem auto 2.5rem;
+
+  @include mq($from: sm) {
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2.5rem;
+  }
+
+  @include mq($from: lg) {
+    position: fixed;
+    top: 1.875rem;
+    right: 3.75rem;
+  }
+
+  @include mq($from: xl) {
+    transform: translateX(50%);
+    right: calc(((100vw - 48rem) / 2) - 3.75rem);
+  }
+
+  svg {
+    pointer-events: none;
+  }
+}
+
+.outer {
+  animation: spin 20s linear infinite;
+  transform-origin: center center;
+}

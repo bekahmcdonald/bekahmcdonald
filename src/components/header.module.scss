@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 1;
+  padding-top: clamped(3rem, 7rem, xs, xl);
+  padding-bottom: clamped(2rem, 3rem, xs, xl);
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.intro {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  margin-left: 0;
+
+  @include mq($from: md) {
+    font-size: 1.25rem;
+    padding-bottom: 3.75rem;
+  }
+}
+
+.block {
+  margin-bottom: 3.125rem;
+  max-width: 60ch;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  // Links
+  a {
+    box-shadow: inset 0 -0.625em rgba($flax, 0.5);
+    text-decoration: none;
+    color: inherit;
+    transition: box-shadow 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        box-shadow: inset 0 -1.25em rgba($flax, 0.75);
+        font-weight: 350;
+      }
+    }
+  }
+}

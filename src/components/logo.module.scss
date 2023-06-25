@@ -1,0 +1,41 @@
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 2;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes offset {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-5px, -6px);
+  }
+}
+
+.logo {
+  width: clamped(12rem, 18.75rem, xs, xl);
+  display: block;
+  overflow: visible;
+}
+
+.outline path {
+  stroke-width: 0.5px;
+  stroke: $ink;
+}
+
+.colour {
+  animation: offset 1.25s ease-out forwards 2.5s;
+}
+
+.paint {
+  stroke-dasharray: 2;
+  stroke-dashoffset: 2;
+  animation: draw 10s ease-in-out forwards infinite;
+}

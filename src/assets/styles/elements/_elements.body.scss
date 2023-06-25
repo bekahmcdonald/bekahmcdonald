@@ -1,0 +1,35 @@
+// Elements: Body
+
+html {
+  background-color: $powder;
+  font-size: 16px;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: $inter;
+  background-color: $white;
+  text-rendering: optimizeLegibility;
+  color: $ink;
+  font-size: 16px;
+  line-height: 1.44;
+  font-weight: 300;
+}
+
+#__nuxt {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+::selection {
+  background-color: rgba($sun, 0.5);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

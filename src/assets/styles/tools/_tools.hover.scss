@@ -1,0 +1,15 @@
+// Tools: Hover
+
+@mixin hover($active: false) {
+  @media (hover: hover) and (pointer: fine) {
+    &:hover:not(:disabled) {
+      @content;
+    }
+  }
+
+  @if ($active) {
+    &:active {
+      @content;
+    }
+  }
+}
