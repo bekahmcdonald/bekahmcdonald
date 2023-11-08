@@ -14,6 +14,11 @@
           label.option 
             input(type="checkbox" v-model="options['removeDataAttributes']")
             span Remove data attributes
+          label.option
+            input(type="checkbox" v-model="options['addIdPrefix']")
+            span Add prefix to IDs
+            .input(v-if="options['addIdPrefix']")
+              input(type="text" v-model="options['idPrefix']" placeholder="Prefix" maxlength="8" :disabled="!options['addIdPrefix']")
         
         .buttons
           button.secondary-button(v-if="submitted" @click="clear") Clear
@@ -53,6 +58,7 @@ export default {
       options: {
         removeIds: true,
         removeDataAttributes: true,
+        addIdPrefix: false,
       },
       copied: false,
     }
@@ -124,21 +130,28 @@ export default {
     },
     async replaceIds(input) {
       const allIds = [...input.matchAll(ID_REGEX)].map((item) => item[2])
-      const allIdReferences = input.matchAll(ID_REF_REGEX)
+    
 
+      const allIdReferences = input.matchAll(ID_REF_REGEX)
       const uniqueIds = {}
 
       ;[...allIdReferences].forEach(([ref, id]) => {
         return (uniqueIds[id] = ref)
       })
 
+
       const randomIds = await this.fetchRandomIds(allIds.length)
+
+      if (this.options.addIdPrefix) {
+        randomIds.forEach((id, index) => {
+          randomIds[index] = this.options.idPrefix + id
+        })
+      }
 
       let result = input
 
       allIds.forEach((id, index) => {
         const re = new RegExp(`(\\sid=['"])(${id})(['"])`, 'g')
-
         if (Object.keys(uniqueIds).includes(id)) {
           result = result.replaceAll(uniqueIds[id], `url(#${randomIds[index]})`)
           result = result.replaceAll(re, '$1' + randomIds[index] + '$3')
@@ -358,5 +371,24 @@ button {
   padding: 10px;
   position: absolute;
   right: 105%;
+}
+
+.input {
+  margin-left: 0.5rem;
+
+  input {
+    accent-color: $london;
+    border-radius: 2px;
+    border: 0;
+    box-shadow: none;
+    color: $ink;
+    font-family: inherit;
+    font-weight: 500;
+    font: inherit;
+    height: 3rem;
+    outline-color:$powder;
+    padding-inline: 0.75rem;
+    width: 8em;
+  }
 }
 </style>
