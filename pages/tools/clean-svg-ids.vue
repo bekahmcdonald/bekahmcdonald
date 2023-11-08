@@ -17,7 +17,7 @@
           label.option
             input(type="checkbox" v-model="options['addIdPrefix']")
             span Add prefix to IDs
-            .input(v-if="options['addIdPrefix']")
+            .prefix(v-if="options['addIdPrefix']")
               input(type="text" v-model="options['idPrefix']" placeholder="Prefix" maxlength="8" :disabled="!options['addIdPrefix']")
         
         .buttons
@@ -373,7 +373,7 @@ button {
   right: 105%;
 }
 
-.input {
+.prefix {
   margin-left: 0.5rem;
 
   input {
