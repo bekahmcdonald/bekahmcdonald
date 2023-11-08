@@ -9,6 +9,9 @@
       .fields
         .options
           label.option 
+            input(type="checkbox" v-model="options['nonInteractive']")
+            span Make non-interactive
+          label.option 
             input(type="checkbox" v-model="options['removeIds']")
             span Replace IDs
           label.option 
@@ -56,6 +59,7 @@ export default {
       input: '',
       output: '',
       options: {
+        nonInteractive: true,
         removeIds: true,
         removeDataAttributes: true,
         addIdPrefix: false,
@@ -123,10 +127,16 @@ export default {
       if (this.options.removeDataAttributes) {
         result = this.removeDataAttributes(result)
       }
+      if(this.options.nonInteractive) {
+        result = this.addNonInteractiveAttributes(result);
+      }
       if (this.options.removeIds) {
         result = await this.replaceIds(result)
       }
       this.output = result
+    },
+    addNonInteractiveAttributes(input) {
+      return input.replaceAll(/<svg/g, '<svg focusable="false" aria-hidden="true"')
     },
     async replaceIds(input) {
       const allIds = [...input.matchAll(ID_REGEX)].map((item) => item[2])
