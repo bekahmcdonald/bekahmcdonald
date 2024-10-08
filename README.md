@@ -11,21 +11,22 @@
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="GSAP" title="GSAP" src="https://cdn.worldvectorlogo.com/logos/gsap-greensock.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="Webpack" title="Webpack" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="npm" title="npm" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" />&ensp;
-  <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="MariaDB" title="MariaDB" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mariadb/mariadb-original.svg" />
-  <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="ZSH" title="ZSH" src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Z_Shell_Logo_Color_Horizontal.svg" />
+  <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="MariaDB" title="MariaDB" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mariadb/mariadb-original.svg" />&ensp;
+  <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="ZSH" title="ZSH" src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Z_Shell_Logo_Color_Horizontal.svg" />&ensp;
 </div>
 <br >
 
 ### Often
 
 <div style="display: flex; align-items: center">
+  <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="Next.js" title="Next.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="WordPress" title="WordPress" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" />&ensp;
-  <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="WooCommerce" title="WooCommerce" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/woocommerce/woocommerce-original.svg" />
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="React" title="React" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="Shopify" title="Shopify" src="https://cdn.freebiesupply.com/logos/large/2x/shopify-logo-svg-vector.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="JSON" title="JSON" src="https://upload.wikimedia.org/wikipedia/commons/c/c9/JSON_vector_logo.svg" />&ensp;
-  <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="PHP" title="PHP" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
+  <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="PHP" title="PHP" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="PostCSS" title="PostCSS" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/PostCSS_Logo.svg/450px-PostCSS_Logo.svg.png" />&ensp;
+  <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="WooCommerce" title="WooCommerce" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/woocommerce/woocommerce-original.svg" />
 </div>
 
 <br >
@@ -37,8 +38,8 @@
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="Vue" title="Vue" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="Nuxt" title="Nuxt" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="GraphQL" title="GraphQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" />&ensp;
-  <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="Laravel + Blade" title="Laravel + Blade" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg" />
-  <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="WebGL" title="WebGL" src="https://upload.wikimedia.org/wikipedia/commons/2/25/WebGL_Logo.svg" />
+  <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="Laravel + Blade" title="Laravel + Blade" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg" />&ensp;
+  <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="WebGL" title="WebGL" src="https://upload.wikimedia.org/wikipedia/commons/2/25/WebGL_Logo.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="Yarn" title="Yarn" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/yarn/yarn-original-wordmark.svg" />&ensp;
 </div>
 
