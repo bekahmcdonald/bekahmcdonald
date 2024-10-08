@@ -6,6 +6,7 @@
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="HTML5" title="HTML5" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="SCSS" title="SCSS" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="CSS3" title="CSS3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />&ensp;
+  <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="PostCSS" title="PostCSS" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/PostCSS_Logo.svg/450px-PostCSS_Logo.svg.png" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="JavaScript" title="JavaScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="Git" title="Git" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="GSAP" title="GSAP" src="https://cdn.worldvectorlogo.com/logos/gsap-greensock.svg" />&ensp;
@@ -22,10 +23,10 @@
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="Next.js" title="Next.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="WordPress" title="WordPress" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="React" title="React" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />&ensp;
+  <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="Typescript" title="Typescript" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="Shopify" title="Shopify" src="https://cdn.freebiesupply.com/logos/large/2x/shopify-logo-svg-vector.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="JSON" title="JSON" src="https://upload.wikimedia.org/wikipedia/commons/c/c9/JSON_vector_logo.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="PHP" title="PHP" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />&ensp;
-  <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="PostCSS" title="PostCSS" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/PostCSS_Logo.svg/450px-PostCSS_Logo.svg.png" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="WooCommerce" title="WooCommerce" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/woocommerce/woocommerce-original.svg" />
 </div>
 
