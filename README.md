@@ -6,17 +6,19 @@
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="HTML5" title="HTML5" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="SCSS" title="SCSS" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="CSS3" title="CSS3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />&ensp;
-  <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="PostCSS" title="PostCSS" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/PostCSS_Logo.svg/450px-PostCSS_Logo.svg.png" />&ensp;
+  <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="PostCSS" title="PostCSS" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postcss/postcss-original.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="JavaScript" title="JavaScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="Git" title="Git" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="GSAP" title="GSAP" src="https://cdn.worldvectorlogo.com/logos/gsap-greensock.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="npm" title="npm" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="MariaDB" title="MariaDB" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mariadb/mariadb-original.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="ZSH" title="ZSH" src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Z_Shell_Logo_Color_Horizontal.svg" />&ensp;
+  
 </div>
 <br >
 
 ### Often
+
 <div style="display: flex; align-items: center">
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="Composer" title="Composer" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/composer/composer-original.svg" />
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="WordPress" title="WordPress" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" />&ensp;
@@ -50,8 +52,16 @@
 
 <div style="display: flex; align-items: center">
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="Gatsby" title="Gatsby" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gatsby/gatsby-original.svg" />&ensp;
-  <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="Tailwind" title="Tailwind" src="https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg" />&ensp;
-  <img style="display: block; flex: none; object-fit: contain; height: auto; width: 50px" alt="jQuery" title="jQuery" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="Gulp" title="Gulp" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gulp/gulp-plain.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="Docker" title="Docker" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" />&ensp;
+  <img style="display: block; flex: none; object-fit: contain; height: auto; width: 50px" alt="jQuery" title="jQuery" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" />&ensp;
 </div>
+
+<br >
+
+### Under duress
+
+<div style="display: flex; align-items: center">
+  <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="Tailwind" title="Tailwind" src="https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg" />&ensp;
+</div>
+
