@@ -37,7 +37,7 @@
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="React" title="React" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="Typescript" title="Typescript" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="Next.js" title="Next.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" />&ensp;
-  <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="Pug" title="Pug" src="https://4008838.fs1.hubspotusercontent-na1.net/hubfs/4008838/supported-pug.png" />&ensp;
+  <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="Pug" title="Pug" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pug/pug-original.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="Vue" title="Vue" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="Nuxt" title="Nuxt" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg" />&ensp;
   <img style="display: block; flex: none; object-fit: contain; height: 50px; width: 50px;" alt="GraphQL" title="GraphQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" />&ensp;
